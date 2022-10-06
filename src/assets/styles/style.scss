@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .homeSearchBlock {
+        display: flex;
+        margin: 30px 0;
+        position: relative;
+        align-items: center;
+
+        svg {
+            position: absolute;
+            left: 10px;
+            color: gray;
+        }
+
+        .homeSearchInput {
+            padding: 10px 10px 10px 30px;
+            border-radius: 20px;
+            border: 2px solid gray;
+            outline: gray;
+        }
+    }
+
+    .pokemonsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.card {
+    width: 24%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px rgba(125,125,125,0.8);
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .cardImageBlock {
+            width: 100%;
+            height: 150px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .cardTitle {
+            text-transform: capitalize;
+        }
+
+        .pokemonInformtaion {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+.pokemon {
+    width: 90%;
+    margin: 0 auto;
+
+    .pokemonBody {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .pokemonInformationBlock {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .pokemonInformationBlockName {
+                font-size: 18px;
+                margin-right: 20px;
+                text-transform: capitalize;
+            }
+
+            .pokemonInformationImage {
+                width: 150px;
+                height: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .pokemonInformationTitle {
+                text-transform: capitalize;
+                margin-left: 10px;
+            }
+
+            .pokemonInformationList {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .pokemonMovesBlock {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
